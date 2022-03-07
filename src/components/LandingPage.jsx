@@ -14,10 +14,10 @@ const LandingPage = () => {
       margin: theme.spacing(1),
     },
     title: {
-      color: "cyan",
+      color: "black",
     },
     subtitle: {
-      color: "maroon",
+      color: "#6495ED",
       textTransform: "uppercase",
     },
     typedContainer: {

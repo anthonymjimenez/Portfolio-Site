@@ -16,7 +16,7 @@ const ImageParticles = () => {
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "#f0f8ff",
             },
           },
           fpsLimit: 120,
@@ -43,31 +43,31 @@ const ImageParticles = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
-                duration: 0.4,
+                distance: 50,
+                duration: 0.1,
               },
             },
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#6495ED",
             },
             links: {
-              color: "#ffffff",
+              color: "#000000",
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0.1,
               width: 1,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: "none",
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 6,
+              speed: 1,
               straight: false,
             },
             number: {
