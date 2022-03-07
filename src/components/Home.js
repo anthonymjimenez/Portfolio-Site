@@ -1,12 +1,13 @@
 import React from "react";
-import Particles from "./Particles";
+import ImageParticles from "./Particles";
 import LandingPage from "./LandingPage";
 
 const Home = () => {
   return (
     <>
+      <div> GELLLOOO</div>
       <LandingPage />
-      <Particles />
+      <ImageParticles />
     </>
   );
 };
