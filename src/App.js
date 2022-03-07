@@ -1,14 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Home from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1> Proto portfolio </h1>
-      </header>
-      <p> WIP </p>
-    </div>
+    <>
+      <CssBaseline />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </>
   );
 }
 
