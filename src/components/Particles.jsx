@@ -4,19 +4,22 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
     position: "fixed",
-    opacity: "0.3",
+    opacity: "0.5",
   },
 }));
 
 const ImageParticles = () => {
+  const classes = useStyles();
+
   return (
     <>
       <Particles
+        canvasClassName={classes.particlesCanvas}
         id="tsparticles"
         options={{
           background: {
             color: {
-              value: "#f0f8ff",
+              value: "#36454F",
             },
           },
           fpsLimit: 120,
@@ -50,10 +53,10 @@ const ImageParticles = () => {
           },
           particles: {
             color: {
-              value: "#6495ED",
+              value: "#f0f8ff",
             },
             links: {
-              color: "#000000",
+              color: "#FFFFFF",
               distance: 150,
               enable: true,
               opacity: 0.1,

@@ -17,7 +17,7 @@ const LandingPage = () => {
       color: "black",
     },
     subtitle: {
-      color: "#6495ED",
+      color: "black",
       textTransform: "uppercase",
     },
     typedContainer: {
@@ -54,6 +54,7 @@ const LandingPage = () => {
             "Full Stack Web Developer",
           ]}
           typeSpeed={40}
+          loop
         />
       </Typography>
     </Box>

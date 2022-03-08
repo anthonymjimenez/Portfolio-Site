@@ -2,13 +2,8 @@ import React from "react";
 import ImageParticles from "./Particles";
 import LandingPage from "./LandingPage";
 import NavBar from "./NavBar";
-const Home = () => {
-  return (
-    <>
-      <LandingPage />
-      <ImageParticles />
-    </>
-  );
+const Portfolio = () => {
+  return <div className="app">AHHX</div>;
 };
 
-export default Home;
+export default Portfolio;
