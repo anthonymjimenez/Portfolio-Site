@@ -22,7 +22,7 @@ const ImageParticles = () => {
               value: "#36454F",
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 30,
           interactivity: {
             events: {
               onClick: {
@@ -53,11 +53,11 @@ const ImageParticles = () => {
           },
           particles: {
             color: {
-              value: "#f0f8ff",
+              value: "#000000",
             },
             links: {
               color: "#FFFFFF",
-              distance: 150,
+              distance: 450,
               enable: true,
               opacity: 0.1,
               width: 1,
@@ -81,14 +81,14 @@ const ImageParticles = () => {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.9,
             },
             shape: {
-              type: "circle",
+              type: ["square", "polygon", "triangle"],
             },
             size: {
               random: true,
-              value: 5,
+              value: 7,
             },
           },
           detectRetina: true,

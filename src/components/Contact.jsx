@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme) => ({
   contactContainer: {
     background: "#36454F",
     height: "100vh",
-    opacity: "0.5",
+    opacity: "0.6",
   },
   heading: {
-    color: "tomato",
+    color: "aliceblue",
     textAlign: "center",
     textTransform: "uppercase",
     marginBottom: "1rem",
@@ -27,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
   },
   input: {
-    color: "#fff",
+    color: "aliceblue",
   },
   button: {
     marginTop: "1rem",
-    color: "tomato",
-    borderColor: "tan",
+    color: "aliceblue",
+    borderColor: "#6495ED",
   },
   field: {
     margin: "1rem 0rem",
@@ -42,21 +42,21 @@ const useStyles = makeStyles((theme) => ({
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
-      color: "tomato",
+      color: "#6495ED",
     },
     "& label": {
-      color: "tan",
+      color: "aliceblue",
     },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: "tan",
+        borderColor: "#6495ED",
       },
       "&:hover fieldset": {
-        borderColor: "tan",
+        borderColor: "#6495ED",
       },
       "&.Mui-focused fieldset": {
         color: "#fff",
-        borderColor: "tan",
+        borderColor: "aliceblue",
       },
     },
   },
