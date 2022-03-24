@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
     position: "fixed",
-    opacity: "0.5",
+    opacity: "0.3",
   },
 }));
 
@@ -22,7 +22,7 @@ const ImageParticles = () => {
               value: "#36454F",
             },
           },
-          fpsLimit: 30,
+          fpsLimit: 20,
           interactivity: {
             events: {
               onClick: {
@@ -40,7 +40,7 @@ const ImageParticles = () => {
                 distance: 400,
                 duration: 2,
                 opacity: 0.8,
-                size: 40,
+                size: 20,
               },
               push: {
                 quantity: 4,
@@ -57,10 +57,10 @@ const ImageParticles = () => {
             },
             links: {
               color: "#FFFFFF",
-              distance: 450,
+              distance: 250,
               enable: true,
-              opacity: 0.1,
-              width: 1,
+              opacity: 0.9,
+              width: 1.5,
             },
             collisions: {
               enable: false,
@@ -88,7 +88,7 @@ const ImageParticles = () => {
             },
             size: {
               random: true,
-              value: 7,
+              value: 3,
             },
           },
           detectRetina: true,
