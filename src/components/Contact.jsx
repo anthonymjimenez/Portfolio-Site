@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   contactContainer: {
     background: "#36454F",
     height: "100vh",
-    opacity: "0.6",
+    opacity: "0.9",
   },
   heading: {
     color: "aliceblue",
@@ -69,7 +69,7 @@ const Contact = () => {
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
           <Typography variant="h5" className={classes.heading}>
-            Hire or Contact me...
+            Contact me!
           </Typography>
           <InputField
             fullWidth={true}
