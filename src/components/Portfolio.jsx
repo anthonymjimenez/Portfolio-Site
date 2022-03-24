@@ -16,6 +16,7 @@ import jmarket from "../images/jmarket-sm.png";
 import calorie from "../images/calories.png";
 import movie from "../images/movie-noms.png";
 import node from "../images/node.png";
+import inreview from "../images/inreviewlg.png";
 
 // import project2 from "../images/html-css-javascript.jpg";
 // import project3 from "../images/javascript-fullstack.jpg";
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#36454F",
     height: "100%",
-    opacity: "0.8",
+    opacity: "0.9",
   },
   cardContainer: {
     maxWidth: 345,
@@ -67,6 +68,13 @@ const projects = [
     url: "https://yesnote.netlify.app/",
   },
   {
+    name: "OpenSecrets Annual Report",
+    description:
+      "This report was collaboratively designed by members of the OpenSecrets staff. I offered guidance throughout the brainstorm/design process on what would be technically feasible. I used our blueprint to build and implement the annual report. Ultimately, I was able to include most of our original ideas. I built the majority of the elements; including the styling of the report and the navigation available throughout.",
+    image: inreview,
+    url: "https://www.opensecrets.org/annual-report-2021",
+  },
+  {
     name: "jmarket",
     description: `jmarket is a robinhood style application built for buying and selling stocks. This was one of my first projects that involved managing complex state. This project uses useReducer and context to create a custom hook for user data and authorization.
     jmarket was written using React, Ruby on Rails (API), Postgres, and Bootstrap.
@@ -81,15 +89,15 @@ const projects = [
     url: "https://calories-counted.herokuapp.com/",
   },
   {
+    name: "Amazon Parser",
+    description: `This node application scraps data from an amazon URL and returns product details. I fetched the HTML as a string and then parsed through the dom elements. This required an advanced knowledge of HTML and javascript. This technology was later used in quicklist.   `,
+    image: node,
+  },
+  {
     name: "Movie Nominator",
     description: `This application searches through the OMDB API to generate nomination lists. Users can search for movies they want to combine into a nomination list. Once the nominees are selected they are saved into local storage so that the data persists in the browser.`,
     image: movie,
     url: "https://my-movie-nominator.netlify.app/",
-  },
-  {
-    name: "Amazon Parser",
-    description: `This node application scraps data from an amazon URL and returns product details. I fetched the HTML as a string and then parsed through the dom elements. This required an advanced knowledge of HTML and javascript. This technology was later used in quicklist.   `,
-    image: node,
   },
 ];
 
