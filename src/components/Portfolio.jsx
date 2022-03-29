@@ -163,7 +163,7 @@ const Portfolio = () => {
                 {project.repoUrl && (
                   <Button size="small" color="primary">
                     <Link
-                      href={project.videoUrl}
+                      href={project.repoUrl}
                       underline="hover"
                       target="_blank"
                     >
