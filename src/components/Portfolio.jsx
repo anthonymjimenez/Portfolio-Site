@@ -58,7 +58,8 @@ const projects = [
     Quicklist was written using React, Node, Express, MongoDB Atlas, Bootstrap, and Auth0.`,
     image: quicklist,
     url: "https://listquick.netlify.app/",
-    videoUrl: true,
+    videoUrl: "https://www.youtube.com/watch?v=yinY6EEQ5GE",
+    repoUrl: "https://github.com/anthonymjimenez/quicklist",
   },
   {
     name: "React Quiz",
@@ -68,7 +69,8 @@ const projects = [
     `,
     image: reactquiz,
     url: "https://yesnote.netlify.app/",
-    videoUrl: true,
+    videoUrl: "https://www.youtube.com/watch?v=flL_wPKp8qM",
+    repoUrl: "https://github.com/anthonymjimenez/Quiz-React",
   },
   {
     name: "OpenSecrets Annual Report",
@@ -76,7 +78,8 @@ const projects = [
       "This report was collaboratively designed by members of the OpenSecrets staff. I offered guidance throughout the brainstorm/design process on what would be technically feasible. I used our blueprint to build and implement the annual report. Ultimately, I was able to include most of our original ideas. I built the majority of the elements; including the styling of the report and the navigation available throughout.",
     image: inreview,
     url: "https://www.opensecrets.org/annual-report-2021",
-    videoUrl: true,
+    videoUrl: false,
+    repoUrl: false,
   },
   {
     name: "jmarket",
@@ -85,27 +88,32 @@ const projects = [
     `,
     image: jmarket,
     url: false,
-    videoUrl: true,
+    videoUrl: "https://www.youtube.com/watch?v=Sy8bPBD3ku0",
+    repoUrl: "https://github.com/anthonymjimenez/jmarket",
   },
   {
     name: "Calorie Tracker",
     description: `Calorie Tracker calculates the Body Mass Index of a user based on their weight, height, and age input. Based on the results the application will recommend a daily calorie count. A user can also input calorie events (eating, exercising) that reduce or increase the calorie count. `,
     image: calorie,
     url: "https://calories-counted.herokuapp.com/",
-    videoUrl: true,
+    videoUrl: "https://www.youtube.com/watch?v=xJIg-G7yfQU",
+    repoUrl: "https://github.com/anthonymjimenez/calorie-tracker",
   },
   {
     name: "Amazon Parser",
     description: `This node application scraps data from an amazon URL and returns product details. I fetched the HTML as a string and then parsed through the dom elements. This required an advanced knowledge of HTML and javascript. This technology was later used in quicklist.   `,
     image: node,
-    videoUrl: true,
+    url: false,
+    videoUrl: false,
+    repoUrl: "https://github.com/anthonymjimenez/Amazon-Parser",
   },
   {
     name: "Movie Nominator",
     description: `This application searches through the OMDB API to generate nomination lists. Users can search for movies they want to combine into a nomination list. Once the nominees are selected they are saved into local storage so that the data persists in the browser.`,
     image: movie,
     url: "https://my-movie-nominator.netlify.app/",
-    videoUrl: true,
+    videoUrl: false,
+    repoUrl: "https://github.com/anthonymjimenez/Movie-Nominator-",
   },
 ];
 
@@ -137,13 +145,32 @@ const Portfolio = () => {
                 {project.url && (
                   <Button size="small" color="primary">
                     <Link href={project.url} underline="hover" target="_blank">
-                      Visit Site
+                      Live Site
                     </Link>
                   </Button>
                 )}
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
+                {project.videoUrl && (
+                  <Button size="small" color="primary">
+                    <Link
+                      href={project.videoUrl}
+                      underline="hover"
+                      target="_blank"
+                    >
+                      Video Demo
+                    </Link>
+                  </Button>
+                )}
+                {project.repoUrl && (
+                  <Button size="small" color="primary">
+                    <Link
+                      href={project.videoUrl}
+                      underline="hover"
+                      target="_blank"
+                    >
+                      Codebase
+                    </Link>
+                  </Button>
+                )}
               </CardActions>
             </Card>
           </Grid>
