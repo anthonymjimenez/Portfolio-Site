@@ -53,7 +53,7 @@ const LandingPage = () => {
             "Backend Developer",
             "Full Stack Web Developer",
           ]}
-          typeSpeed={40}
+          typeSpeed={100}
           loop
         />
       </Typography>
