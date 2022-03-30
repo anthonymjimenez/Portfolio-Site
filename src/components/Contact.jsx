@@ -76,8 +76,11 @@ const Contact = () => {
         e.target,
         process.env.REACT_APP_EMAIL_ID
       );
-      console.log(results);
+      console.log("results", results);
+
+      alert("Message Sent, I'll get back to you shortly!");
     } catch (error) {
+      alert("An error occurred, please try again.");
       console.log(error);
     }
   };
