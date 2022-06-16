@@ -77,7 +77,7 @@ const projects = [
     description:
       "This report was collaboratively designed by members of the OpenSecrets staff. I offered guidance throughout the brainstorm/design process on what would be technically feasible. I used our blueprint to build and implement the annual report. Ultimately, I was able to include most of our original ideas. I built the majority of the elements; including the styling of the report and the navigation available throughout.",
     image: inreview,
-    url: "https://www.opensecrets.org/annual-report-2021",
+    url: "https://www.opensecrets.org/annual-report-2021?nocache",
     videoUrl: false,
     repoUrl: false,
   },

@@ -1,3 +1,1 @@
-Portfolio site WIP
-
-Will likely be written with material UI.
+Portfolio site highlighting my career in web development. Written in react & material UI
