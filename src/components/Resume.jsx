@@ -273,6 +273,29 @@ const Resume = () => {
             helped to design and implement the 2021 Annual Report.{" "}
           </Typography>
         </Box>
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            CUNY Tech Prep
+          </Typography>
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Volunteer Technical Interviewer
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            As a volunteer at CUNY Tech Prep, I had the opportunity to conduct
+            interviews with applicants. I facilitated behavioral and technical
+            interviews meant to assess an applicant's current technical
+            knowledge and soft skills. I offered feedback to the interviewees
+            and helped determine if they were currently ready for the program.{" "}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
